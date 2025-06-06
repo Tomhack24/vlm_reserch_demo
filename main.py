@@ -1,12 +1,12 @@
 import torch
+from data.raw.load_datasets import load_coco_datasets
 
 
 def main():
-    print(torch.__version__)
-    print(torch.cuda.is_available())
-    print(torch.cuda.device_count())
-    print(torch.cuda.get_device_name(0))
-
+    val, test = load_coco_datasets()
+    print(val)
+    print(test)
+    print(val[0])
 
 
 if __name__ == "__main__":
