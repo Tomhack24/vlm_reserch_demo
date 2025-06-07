@@ -8,3 +8,5 @@ container_start.sh
 .ipynb_checkpoints/
 
 __pycache__/
+
+data/raw/VQAv2_val/
