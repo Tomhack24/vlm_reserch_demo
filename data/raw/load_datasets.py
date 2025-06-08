@@ -1,8 +1,5 @@
 from datasets import load_dataset
 
-class LoadDatasets:
-    def __init__(self):
-        self.dataset = load_dataset("json", data_files="data/raw/data.json")
-
-    def load_dataset(self):
-        return self.datasets
+def load_vqav2_val():
+    dataset = load_dataset("HuggingFaceM4/VQAv2", split="validation[:10%]", trust_remote_code=True)
+    return dataset
